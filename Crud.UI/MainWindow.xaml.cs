@@ -49,7 +49,7 @@ namespace Crud.UI
             if (txtStudentID.Text != string.Empty && txtStudent.Text != string.Empty)
             {
                await _crudServices.UpdateBrand(int.Parse(txtStudentID.Text), txtStudent.Text, txtCourse.Text);
-               throw new Exception("Data Successfully Updateddd");
+               throw new Exception("Data Successfully Updated");
             }
          }
          catch (Exception ex)
@@ -71,7 +71,7 @@ namespace Crud.UI
             if (txtStudentID.Text != string.Empty && txtStudent.Text != string.Empty && txtCourse.Text != string.Empty)
             {
                await _crudServices.DeleteBrand(int.Parse(txtStudentID.Text));
-               throw new Exception("Data Successfully Deleteddd");
+               throw new Exception("Data Successfully Deleted");
             }
          }
          catch (Exception ex)
@@ -136,7 +136,7 @@ namespace Crud.UI
             _crudServices.AddBrand(txtStudent.Text, txtCourse.Text);
 
 
-            throw new Exception("Data Successfully Addedd");
+            MessageBox.Show("Data Successfully Added");
          }
          catch (Exception ex)
          {
